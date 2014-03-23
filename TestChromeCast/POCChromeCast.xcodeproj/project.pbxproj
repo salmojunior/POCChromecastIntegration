@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2ABD2AE618CC929D00D2C760 /* GoogleCast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABD2AE518CC929D00D2C760 /* GoogleCast.framework */; };
+		D894EF5518B3E48E00AD8703 /* ShowChromecastTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D894EF5418B3E48E00AD8703 /* ShowChromecastTableViewController.m */; };
+		D89C8ED018B7810B00B01C14 /* STGCTextChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = D89C8ECF18B7810B00B01C14 /* STGCTextChannel.m */; };
+		D8D0501E18B27DA900776A0E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D0501D18B27DA900776A0E /* Foundation.framework */; };
+		D8D0502018B27DA900776A0E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D0501F18B27DA900776A0E /* CoreGraphics.framework */; };
+		D8D0502218B27DA900776A0E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D0502118B27DA900776A0E /* UIKit.framework */; };
+		D8D0502818B27DA900776A0E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8D0502618B27DA900776A0E /* InfoPlist.strings */; };
+		D8D0502A18B27DA900776A0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D0502918B27DA900776A0E /* main.m */; };
+		D8D0502E18B27DA900776A0E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D0502D18B27DA900776A0E /* AppDelegate.m */; };
+		D8D0503118B27DA900776A0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8D0502F18B27DA900776A0E /* Main.storyboard */; };
+		D8D0503418B27DA900776A0E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D0503318B27DA900776A0E /* ViewController.m */; };
+		D8D0503618B27DA900776A0E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8D0503518B27DA900776A0E /* Images.xcassets */; };
+		D8D0503D18B27DA900776A0E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D0503C18B27DA900776A0E /* XCTest.framework */; };
+		D8D0503E18B27DA900776A0E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D0501D18B27DA900776A0E /* Foundation.framework */; };
+		D8D0503F18B27DA900776A0E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D0502118B27DA900776A0E /* UIKit.framework */; };
+		D8D0504718B27DA900776A0E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8D0504518B27DA900776A0E /* InfoPlist.strings */; };
+		D8D0504918B27DA900776A0E /* TestChromeCastTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D0504818B27DA900776A0E /* TestChromeCastTests.m */; };
+		D8D0505718B2901B00776A0E /* STChromecastDeviceController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D0505618B2901A00776A0E /* STChromecastDeviceController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D8D0504018B27DA900776A0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8D0501218B27DA900776A0E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8D0501918B27DA900776A0E;
+			remoteInfo = TestChromeCast;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2ABD2AE518CC929D00D2C760 /* GoogleCast.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleCast.framework; path = TestChromeCast/GoogleCast.framework; sourceTree = "<group>"; };
+		D894EF5318B3E48E00AD8703 /* ShowChromecastTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowChromecastTableViewController.h; sourceTree = "<group>"; };
+		D894EF5418B3E48E00AD8703 /* ShowChromecastTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowChromecastTableViewController.m; sourceTree = "<group>"; };
+		D89C8ECE18B7810B00B01C14 /* STGCTextChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STGCTextChannel.h; sourceTree = "<group>"; };
+		D89C8ECF18B7810B00B01C14 /* STGCTextChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STGCTextChannel.m; sourceTree = "<group>"; };
+		D8D0501A18B27DA900776A0E /* POCChromeCast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = POCChromeCast.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8D0501D18B27DA900776A0E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D8D0501F18B27DA900776A0E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D8D0502118B27DA900776A0E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D8D0502518B27DA900776A0E /* POCChromeCast-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "POCChromeCast-Info.plist"; sourceTree = "<group>"; };
+		D8D0502718B27DA900776A0E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D8D0502918B27DA900776A0E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D8D0502B18B27DA900776A0E /* POCChromeCast-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "POCChromeCast-Prefix.pch"; sourceTree = "<group>"; };
+		D8D0502C18B27DA900776A0E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D8D0502D18B27DA900776A0E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D8D0503018B27DA900776A0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D8D0503218B27DA900776A0E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D8D0503318B27DA900776A0E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D8D0503518B27DA900776A0E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D8D0503B18B27DA900776A0E /* POCChromeCastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = POCChromeCastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8D0503C18B27DA900776A0E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D8D0504418B27DA900776A0E /* POCChromeCastTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "POCChromeCastTests-Info.plist"; sourceTree = "<group>"; };
+		D8D0504618B27DA900776A0E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D8D0504818B27DA900776A0E /* TestChromeCastTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestChromeCastTests.m; sourceTree = "<group>"; };
+		D8D0505518B2901A00776A0E /* STChromecastDeviceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STChromecastDeviceController.h; sourceTree = "<group>"; };
+		D8D0505618B2901A00776A0E /* STChromecastDeviceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STChromecastDeviceController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8D0501718B27DA900776A0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ABD2AE618CC929D00D2C760 /* GoogleCast.framework in Frameworks */,
+				D8D0502018B27DA900776A0E /* CoreGraphics.framework in Frameworks */,
+				D8D0502218B27DA900776A0E /* UIKit.framework in Frameworks */,
+				D8D0501E18B27DA900776A0E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8D0503818B27DA900776A0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8D0503D18B27DA900776A0E /* XCTest.framework in Frameworks */,
+				D8D0503F18B27DA900776A0E /* UIKit.framework in Frameworks */,
+				D8D0503E18B27DA900776A0E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D8D0501118B27DA900776A0E = {
+			isa = PBXGroup;
+			children = (
+				D8D0502318B27DA900776A0E /* TestChromeCast */,
+				D8D0504218B27DA900776A0E /* TestChromeCastTests */,
+				D8D0501C18B27DA900776A0E /* Frameworks */,
+				D8D0501B18B27DA900776A0E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D8D0501B18B27DA900776A0E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8D0501A18B27DA900776A0E /* POCChromeCast.app */,
+				D8D0503B18B27DA900776A0E /* POCChromeCastTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8D0501C18B27DA900776A0E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2ABD2AE518CC929D00D2C760 /* GoogleCast.framework */,
+				D8D0501D18B27DA900776A0E /* Foundation.framework */,
+				D8D0501F18B27DA900776A0E /* CoreGraphics.framework */,
+				D8D0502118B27DA900776A0E /* UIKit.framework */,
+				D8D0503C18B27DA900776A0E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8D0502318B27DA900776A0E /* TestChromeCast */ = {
+			isa = PBXGroup;
+			children = (
+				D8D0502C18B27DA900776A0E /* AppDelegate.h */,
+				D8D0502D18B27DA900776A0E /* AppDelegate.m */,
+				D8D0502F18B27DA900776A0E /* Main.storyboard */,
+				D8D0503218B27DA900776A0E /* ViewController.h */,
+				D8D0503318B27DA900776A0E /* ViewController.m */,
+				D894EF5318B3E48E00AD8703 /* ShowChromecastTableViewController.h */,
+				D894EF5418B3E48E00AD8703 /* ShowChromecastTableViewController.m */,
+				D8D0505418B28FEE00776A0E /* Chromecast */,
+				D8D0503518B27DA900776A0E /* Images.xcassets */,
+				D8D0502418B27DA900776A0E /* Supporting Files */,
+			);
+			path = TestChromeCast;
+			sourceTree = "<group>";
+		};
+		D8D0502418B27DA900776A0E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8D0502518B27DA900776A0E /* POCChromeCast-Info.plist */,
+				D8D0502618B27DA900776A0E /* InfoPlist.strings */,
+				D8D0502918B27DA900776A0E /* main.m */,
+				D8D0502B18B27DA900776A0E /* POCChromeCast-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D8D0504218B27DA900776A0E /* TestChromeCastTests */ = {
+			isa = PBXGroup;
+			children = (
+				D8D0504818B27DA900776A0E /* TestChromeCastTests.m */,
+				D8D0504318B27DA900776A0E /* Supporting Files */,
+			);
+			path = TestChromeCastTests;
+			sourceTree = "<group>";
+		};
+		D8D0504318B27DA900776A0E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8D0504418B27DA900776A0E /* POCChromeCastTests-Info.plist */,
+				D8D0504518B27DA900776A0E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D8D0505418B28FEE00776A0E /* Chromecast */ = {
+			isa = PBXGroup;
+			children = (
+				D8D0505518B2901A00776A0E /* STChromecastDeviceController.h */,
+				D8D0505618B2901A00776A0E /* STChromecastDeviceController.m */,
+				D89C8ECE18B7810B00B01C14 /* STGCTextChannel.h */,
+				D89C8ECF18B7810B00B01C14 /* STGCTextChannel.m */,
+			);
+			name = Chromecast;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D8D0501918B27DA900776A0E /* POCChromeCast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8D0504C18B27DA900776A0E /* Build configuration list for PBXNativeTarget "POCChromeCast" */;
+			buildPhases = (
+				D8D0501618B27DA900776A0E /* Sources */,
+				D8D0501718B27DA900776A0E /* Frameworks */,
+				D8D0501818B27DA900776A0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = POCChromeCast;
+			productName = TestChromeCast;
+			productReference = D8D0501A18B27DA900776A0E /* POCChromeCast.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D8D0503A18B27DA900776A0E /* POCChromeCastTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8D0504F18B27DA900776A0E /* Build configuration list for PBXNativeTarget "POCChromeCastTests" */;
+			buildPhases = (
+				D8D0503718B27DA900776A0E /* Sources */,
+				D8D0503818B27DA900776A0E /* Frameworks */,
+				D8D0503918B27DA900776A0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8D0504118B27DA900776A0E /* PBXTargetDependency */,
+			);
+			name = POCChromeCastTests;
+			productName = TestChromeCastTests;
+			productReference = D8D0503B18B27DA900776A0E /* POCChromeCastTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8D0501218B27DA900776A0E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Salmo Roberto da Silva Junior";
+				TargetAttributes = {
+					D8D0503A18B27DA900776A0E = {
+						TestTargetID = D8D0501918B27DA900776A0E;
+					};
+				};
+			};
+			buildConfigurationList = D8D0501518B27DA900776A0E /* Build configuration list for PBXProject "POCChromeCast" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D8D0501118B27DA900776A0E;
+			productRefGroup = D8D0501B18B27DA900776A0E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8D0501918B27DA900776A0E /* POCChromeCast */,
+				D8D0503A18B27DA900776A0E /* POCChromeCastTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D8D0501818B27DA900776A0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8D0503618B27DA900776A0E /* Images.xcassets in Resources */,
+				D8D0502818B27DA900776A0E /* InfoPlist.strings in Resources */,
+				D8D0503118B27DA900776A0E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8D0503918B27DA900776A0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8D0504718B27DA900776A0E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8D0501618B27DA900776A0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D89C8ED018B7810B00B01C14 /* STGCTextChannel.m in Sources */,
+				D8D0503418B27DA900776A0E /* ViewController.m in Sources */,
+				D8D0505718B2901B00776A0E /* STChromecastDeviceController.m in Sources */,
+				D894EF5518B3E48E00AD8703 /* ShowChromecastTableViewController.m in Sources */,
+				D8D0502E18B27DA900776A0E /* AppDelegate.m in Sources */,
+				D8D0502A18B27DA900776A0E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8D0503718B27DA900776A0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8D0504918B27DA900776A0E /* TestChromeCastTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D8D0504118B27DA900776A0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8D0501918B27DA900776A0E /* POCChromeCast */;
+			targetProxy = D8D0504018B27DA900776A0E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D8D0502618B27DA900776A0E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8D0502718B27DA900776A0E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D8D0502F18B27DA900776A0E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8D0503018B27DA900776A0E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D8D0504518B27DA900776A0E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8D0504618B27DA900776A0E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D8D0504A18B27DA900776A0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D8D0504B18B27DA900776A0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8D0504D18B27DA900776A0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/salmo/Downloads/GoogleCastFramework-2.0-Release",
+					"/Users/salmojunior/Documents/Projects\\ CIT/Chromecast/TestChromeCast/TestChromeCast",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestChromeCast/POCChromeCast-Prefix.pch";
+				INFOPLIST_FILE = "TestChromeCast/POCChromeCast-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = POCChromeCast;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D8D0504E18B27DA900776A0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/salmo/Downloads/GoogleCastFramework-2.0-Release",
+					"/Users/salmojunior/Documents/Projects\\ CIT/Chromecast/TestChromeCast/TestChromeCast",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestChromeCast/POCChromeCast-Prefix.pch";
+				INFOPLIST_FILE = "TestChromeCast/POCChromeCast-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = POCChromeCast;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D8D0505018B27DA900776A0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TestChromeCast.app/TestChromeCast";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestChromeCast/TestChromeCast-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TestChromeCastTests/POCChromeCastTests-Info.plist";
+				PRODUCT_NAME = POCChromeCastTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D8D0505118B27DA900776A0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TestChromeCast.app/TestChromeCast";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestChromeCast/TestChromeCast-Prefix.pch";
+				INFOPLIST_FILE = "TestChromeCastTests/POCChromeCastTests-Info.plist";
+				PRODUCT_NAME = POCChromeCastTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D8D0501518B27DA900776A0E /* Build configuration list for PBXProject "POCChromeCast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8D0504A18B27DA900776A0E /* Debug */,
+				D8D0504B18B27DA900776A0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8D0504C18B27DA900776A0E /* Build configuration list for PBXNativeTarget "POCChromeCast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8D0504D18B27DA900776A0E /* Debug */,
+				D8D0504E18B27DA900776A0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8D0504F18B27DA900776A0E /* Build configuration list for PBXNativeTarget "POCChromeCastTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8D0505018B27DA900776A0E /* Debug */,
+				D8D0505118B27DA900776A0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D8D0501218B27DA900776A0E /* Project object */;
+}

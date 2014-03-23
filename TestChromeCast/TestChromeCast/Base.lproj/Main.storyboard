@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="1iO-pQ-gUj">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="coZ-q0-EWk">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="1iO-pQ-gUj" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="U3h-J7-POr">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="0mt-uR-bfu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nIc-wa-tkT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-297" y="138"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BIG-iq-MFV"/>
+                        <viewControllerLayoutGuide type="bottom" id="q1P-I0-cQD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS" customClass="UIControl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mjQ-g8-5Fp">
+                                <rect key="frame" x="19" y="209" width="282" height="131"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Xf-kp-n21">
+                                        <rect key="frame" x="4" y="8" width="45" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="play_dark">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="pause_black"/>
+                                        <connections>
+                                            <action selector="playMedia:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9qF-4m-Bv9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RyR-XE-MxW">
+                                        <rect key="frame" x="227" y="69" width="45" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="fullscreen">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="endFullscreen"/>
+                                        <connections>
+                                            <action selector="sendFullscreen:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DCN-Nr-iJN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zwW-Bf-ksF">
+                                        <rect key="frame" x="173" y="69" width="45" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="unmute">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="mute"/>
+                                        <connections>
+                                            <action selector="sendUnMute:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gnP-HY-d8A"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zBJ-y7-inx">
+                                        <rect key="frame" x="4" y="69" width="45" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="mute">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="mute"/>
+                                        <connections>
+                                            <action selector="sendMute:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QSJ-Zs-ahj"/>
+                                        </connections>
+                                    </button>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="771-7c-ClF">
+                                        <rect key="frame" x="51" y="14" width="223" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="videoProgressChanges:" destination="vXZ-lx-hvc" eventType="valueChanged" id="3w0-HC-476"/>
+                                        </connections>
+                                    </slider>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="9s1-xZ-Rhx">
+                                        <rect key="frame" x="51" y="75" width="118" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="volumeChanges:" destination="vXZ-lx-hvc" eventType="valueChanged" id="Y5n-NW-tzF"/>
+                                        </connections>
+                                    </slider>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="131" id="aag-P1-rYT"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ciandt_icon" translatesAutoresizingMaskIntoConstraints="NO" id="hjW-2g-hNq">
+                                <rect key="frame" x="29" y="109" width="88" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="Q3X-fo-Lmk"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F7t-BO-5k7">
+                                <rect key="frame" x="146" y="103" width="140" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="JIm-yq-WVw"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="109" id="NCf-1I-1aq"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="eQK-Qr-5wc"/>
+                                    <constraint firstAttribute="width" constant="140" id="v30-Eq-HCZ"/>
+                                </constraints>
+                                <state key="normal" title="Send Youtube 1">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendYoutubeVideo:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="kNj-ia-cNV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21R-qK-hUA">
+                                <rect key="frame" x="146" y="151" width="140" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="BRx-xK-I6C"/>
+                                    <constraint firstAttribute="width" constant="140" id="ZMf-Z7-vhG"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="Zj8-An-cJX"/>
+                                </constraints>
+                                <state key="normal" title="Send Youtube 2">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendYoutubeTwo:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="SpA-4l-Vb2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Response message:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBZ-DB-4hn">
+                                <rect key="frame" x="20" y="353" width="156" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Oza-cL-9xC"/>
+                                    <constraint firstAttribute="width" constant="156" id="goh-Gj-PfP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MP5-l1-AIL">
+                                <rect key="frame" x="19" y="374" width="281" height="166"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MP5-l1-AIL" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="19" id="7aV-PZ-XdP"/>
+                            <constraint firstItem="F7t-BO-5k7" firstAttribute="leading" secondItem="hjW-2g-hNq" secondAttribute="trailing" constant="29" id="8Og-Fm-Yiy"/>
+                            <constraint firstItem="21R-qK-hUA" firstAttribute="leading" secondItem="F7t-BO-5k7" secondAttribute="leading" id="CwA-3c-n9F"/>
+                            <constraint firstItem="F7t-BO-5k7" firstAttribute="top" secondItem="BIG-iq-MFV" secondAttribute="bottom" constant="39" id="GLw-bb-72y"/>
+                            <constraint firstItem="21R-qK-hUA" firstAttribute="top" secondItem="F7t-BO-5k7" secondAttribute="bottom" constant="8" id="N6I-eP-rK5"/>
+                            <constraint firstAttribute="trailing" secondItem="F7t-BO-5k7" secondAttribute="trailing" constant="34" id="Omp-UA-EUW"/>
+                            <constraint firstItem="q1P-I0-cQD" firstAttribute="top" secondItem="MP5-l1-AIL" secondAttribute="bottom" constant="28" id="PNX-aq-gPt"/>
+                            <constraint firstItem="XBZ-DB-4hn" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="VcN-Np-y5r"/>
+                            <constraint firstItem="hjW-2g-hNq" firstAttribute="top" secondItem="BIG-iq-MFV" secondAttribute="bottom" constant="45" id="ZlK-df-oQI"/>
+                            <constraint firstItem="mjQ-g8-5Fp" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="19" id="aGG-X3-vqw"/>
+                            <constraint firstAttribute="trailing" secondItem="mjQ-g8-5Fp" secondAttribute="trailing" constant="19" id="boP-6h-pHF"/>
+                            <constraint firstItem="hjW-2g-hNq" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="29" id="cS3-KL-HOv"/>
+                            <constraint firstItem="XBZ-DB-4hn" firstAttribute="top" secondItem="mjQ-g8-5Fp" secondAttribute="bottom" constant="13" id="e3L-89-lva"/>
+                            <constraint firstAttribute="trailing" secondItem="MP5-l1-AIL" secondAttribute="trailing" constant="20" id="oE6-Tc-rPi"/>
+                            <constraint firstItem="21R-qK-hUA" firstAttribute="top" secondItem="F7t-BO-5k7" secondAttribute="bottom" constant="8" symbolic="YES" id="oXh-dX-wpb"/>
+                            <constraint firstItem="mjQ-g8-5Fp" firstAttribute="top" secondItem="21R-qK-hUA" secondAttribute="bottom" constant="18" id="pig-aZ-7It"/>
+                            <constraint firstItem="MP5-l1-AIL" firstAttribute="top" secondItem="XBZ-DB-4hn" secondAttribute="bottom" id="rH3-kJ-WDm"/>
+                            <constraint firstItem="mjQ-g8-5Fp" firstAttribute="top" secondItem="hjW-2g-hNq" secondAttribute="bottom" constant="28" id="u7g-x8-BK8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="iHN-F7-XgD"/>
+                    <connections>
+                        <outlet property="controlsView" destination="mjQ-g8-5Fp" id="PMy-mA-0Nb"/>
+                        <outlet property="fullscreenButton" destination="RyR-XE-MxW" id="Kiv-14-TU5"/>
+                        <outlet property="playButton" destination="5Xf-kp-n21" id="CSK-4W-zHD"/>
+                        <outlet property="responseLabel" destination="XBZ-DB-4hn" id="BWk-yO-zwg"/>
+                        <outlet property="responseTextView" destination="MP5-l1-AIL" id="cq2-ar-3Zl"/>
+                        <outlet property="videoProgress" destination="771-7c-ClF" id="A8G-gz-aao"/>
+                        <outlet property="volumeSlider" destination="9s1-xZ-Rhx" id="5IB-HW-JD1"/>
+                        <segue destination="pYP-Oc-f3E" kind="modal" identifier="chromecastConnect" id="O83-MA-rIB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="174" y="143"/>
+        </scene>
+        <!--Show Chromecast Table View Controller - Chromecasts-->
+        <scene sceneID="xcq-dT-UUN">
+            <objects>
+                <tableViewController id="16S-9w-5lA" customClass="ShowChromecastTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="WmB-Wk-Srq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="rV5-OV-MKJ">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rV5-OV-MKJ" id="sz8-Xs-ZwL">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Chromecasts" id="bf5-rT-1bE"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aqf-U4-fBj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1214" y="143"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fe4-Dl-i04">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="pYP-Oc-f3E" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zah-EC-NX2">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="16S-9w-5lA" kind="relationship" relationship="rootViewController" id="1Yr-pI-l4g"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vep-pJ-1uD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="687" y="143"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ciandt_icon" width="140" height="140"/>
+        <image name="endFullscreen" width="64" height="64"/>
+        <image name="fullscreen" width="64" height="64"/>
+        <image name="mute" width="64" height="64"/>
+        <image name="pause_black" width="49" height="49"/>
+        <image name="play_dark" width="74" height="74"/>
+        <image name="unmute" width="128" height="128"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
