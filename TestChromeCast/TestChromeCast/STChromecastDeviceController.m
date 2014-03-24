@@ -9,7 +9,7 @@
 #import "STChromecastDeviceController.h"
 #import "STGCTextChannel.h"
 
-static NSString *const kReceiverAppID = @"6F2DE9FE";
+static NSString *const kReceiverAppID = @"5D760EA9";
 
 @interface STChromecastDeviceController () <STGCTextChannelDelegate>
 

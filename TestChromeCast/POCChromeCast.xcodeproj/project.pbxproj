@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2ABD2AE618CC929D00D2C760 /* GoogleCast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABD2AE518CC929D00D2C760 /* GoogleCast.framework */; };
+		8EDBBBE118E096EE00CE0EE3 /* GoogleCast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EDBBBE018E096EE00CE0EE3 /* GoogleCast.framework */; };
 		D894EF5518B3E48E00AD8703 /* ShowChromecastTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D894EF5418B3E48E00AD8703 /* ShowChromecastTableViewController.m */; };
 		D89C8ED018B7810B00B01C14 /* STGCTextChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = D89C8ECF18B7810B00B01C14 /* STGCTextChannel.m */; };
 		D8D0501E18B27DA900776A0E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D0501D18B27DA900776A0E /* Foundation.framework */; };
@@ -38,7 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2ABD2AE518CC929D00D2C760 /* GoogleCast.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleCast.framework; path = TestChromeCast/GoogleCast.framework; sourceTree = "<group>"; };
+		8EDBBBE018E096EE00CE0EE3 /* GoogleCast.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleCast.framework; path = TestChromeCast/GoogleCast.framework; sourceTree = "<group>"; };
 		D894EF5318B3E48E00AD8703 /* ShowChromecastTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowChromecastTableViewController.h; sourceTree = "<group>"; };
 		D894EF5418B3E48E00AD8703 /* ShowChromecastTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowChromecastTableViewController.m; sourceTree = "<group>"; };
 		D89C8ECE18B7810B00B01C14 /* STGCTextChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STGCTextChannel.h; sourceTree = "<group>"; };
@@ -71,9 +71,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2ABD2AE618CC929D00D2C760 /* GoogleCast.framework in Frameworks */,
 				D8D0502018B27DA900776A0E /* CoreGraphics.framework in Frameworks */,
 				D8D0502218B27DA900776A0E /* UIKit.framework in Frameworks */,
+				8EDBBBE118E096EE00CE0EE3 /* GoogleCast.framework in Frameworks */,
 				D8D0501E18B27DA900776A0E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -113,7 +113,7 @@
 		D8D0501C18B27DA900776A0E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2ABD2AE518CC929D00D2C760 /* GoogleCast.framework */,
+				8EDBBBE018E096EE00CE0EE3 /* GoogleCast.framework */,
 				D8D0501D18B27DA900776A0E /* Foundation.framework */,
 				D8D0501F18B27DA900776A0E /* CoreGraphics.framework */,
 				D8D0502118B27DA900776A0E /* UIKit.framework */,
@@ -412,7 +412,9 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/salmo/Downloads/GoogleCastFramework-2.0-Release",
-					"/Users/salmojunior/Documents/Projects\\ CIT/Chromecast/TestChromeCast/TestChromeCast",
+					/Users/salmojunior/Documents/Projects,
+					CIT/Chromecast/TestChromeCast/TestChromeCast,
+					"$(PROJECT_DIR)/TestChromeCast",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestChromeCast/POCChromeCast-Prefix.pch";
@@ -432,7 +434,9 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/salmo/Downloads/GoogleCastFramework-2.0-Release",
-					"/Users/salmojunior/Documents/Projects\\ CIT/Chromecast/TestChromeCast/TestChromeCast",
+					/Users/salmojunior/Documents/Projects,
+					CIT/Chromecast/TestChromeCast/TestChromeCast,
+					"$(PROJECT_DIR)/TestChromeCast",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestChromeCast/POCChromeCast-Prefix.pch";
