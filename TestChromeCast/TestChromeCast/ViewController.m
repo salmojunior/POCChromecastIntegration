@@ -16,11 +16,12 @@
 @property (weak, nonatomic) IBOutlet UIView *controlsView;
 @property (weak, nonatomic) IBOutlet UIButton *playButton;
 @property (weak, nonatomic) IBOutlet UIButton *fullscreenButton;
+@property (weak, nonatomic) IBOutlet UIButton *volumeButton;
 @property (weak, nonatomic) IBOutlet UITextView *responseTextView;
 @property (weak, nonatomic) IBOutlet UILabel *responseLabel;
 @property (weak, nonatomic) IBOutlet UISlider *videoProgress;
 @property (weak, nonatomic) IBOutlet UISlider *volumeSlider;
-
+@property (assign, nonatomic) BOOL isPlaying;
 @end
 
 @implementation ViewController
@@ -34,6 +35,7 @@
     
     self.controlsView.layer.cornerRadius = 5.0f;
     self.controlsView.layer.masksToBounds = YES;
+    self.volumeSlider.value = 100.0f;
     [self controls:NO];
     
     // Store a reference to the chromecast controller.
@@ -62,18 +64,21 @@
 
 - (void)sendMedia:(NSString *)videoId provider:(NSString *)providerName
 {
-    [self.playButton setSelected:NO];
+    [self.playButton setSelected:YES];
+    [self.fullscreenButton setSelected:YES];
     NSDictionary *dicVideo = @{@"providerName":providerName,@"videoId":videoId};
     NSString *jsonVideo = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:dicVideo options:0 error:nil] encoding:NSUTF8StringEncoding];
     [_chromecastController sendMessage:jsonVideo];
 }
 
 - (IBAction)sendYoutubeVideo:(id)sender {
-    [self sendMedia:@"zf6PUgxWe68" provider:@"youtube"];
+    self.videoProgress.maximumValue = 493.0f;
+    [self sendMedia:@"A72DaaXBVAA" provider:@"youtube"];
 }
 
 - (IBAction)sendYoutubeTwo:(id)sender {
-    [self sendMedia:@"GhP1nsqxKBM" provider:@"youtube"];
+    self.videoProgress.maximumValue = 286.0f;
+    [self sendMedia:@"XF1K4Z6We1w" provider:@"youtube"];
 }
 
 - (IBAction)playMedia:(UIButton *)sender {
@@ -87,11 +92,13 @@
 }
 
 - (IBAction)sendMute:(UIButton *)sender {
-    [_chromecastController sendMessage:@"mute"];
-}
-
-- (IBAction)sendUnMute:(id)sender {
-    [_chromecastController sendMessage:@"unmute"];
+    if ([sender isSelected]) {
+        [_chromecastController sendMessage:@"unmute"];
+        [sender setSelected:NO];
+    } else {
+        [_chromecastController sendMessage:@"mute"];
+        [sender setSelected:YES];
+    }
 }
 
 - (IBAction)sendFullscreen:(UIButton *)sender {
@@ -119,12 +126,26 @@
     }
 }
 
-- (IBAction)videoProgressChanges:(id)sender {
-    
+- (IBAction)videoProgressChanges:(id)sender
+{
+    NSInteger seekTo = ceil(self.videoProgress.value);
+    NSString *valueString = [NSString stringWithFormat:@"%d", seekTo];
+    NSDictionary *dicProgress = @{@"seekto":valueString};
+    NSString *jsonProgress= [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:dicProgress options:0 error:nil] encoding:NSUTF8StringEncoding];
+    [_chromecastController sendMessage:jsonProgress];
 }
 
-- (IBAction)volumeChanges:(id)sender {
+- (IBAction)volumeChanges:(id)sender
+{
+    NSInteger volume = self.volumeSlider.value;
+    if (volume != 0) {
+        [_chromecastController sendMessage:@"unmute"];
+    }
     
+    NSString *valueString = [NSString stringWithFormat:@"%d", volume];
+    NSDictionary *dicVolume = @{@"setvolume":valueString};
+    NSString *jsonVolume = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:dicVolume options:0 error:nil] encoding:NSUTF8StringEncoding];
+    [_chromecastController sendMessage:jsonVolume];
 }
 
 #pragma mark - ChromecastControllerDelegate
@@ -132,12 +153,16 @@
 /**
  * Called to display the modal device view controller from the cast icon.
  */
-- (void)shouldDisplayModalDeviceController {
+- (void)shouldDisplayModalDeviceController
+{
     if (_chromecastController.isConnected) {
         [self.responseTextView setText:@""];
         [self controls:NO];
         [_chromecastController sendMessage:@"disconnect"];
         [_chromecastController disconnectFromDevice];
+        [self.playButton setSelected:NO];
+        [self.fullscreenButton setSelected:NO];
+        self.videoProgress.value = 0;
     } else {
         [self performSegueWithIdentifier:@"chromecastConnect" sender:self];
     }
@@ -165,7 +190,38 @@
     
     self.responseTextView.text = messagesBkp;
     
+    
+    if ([message isEqualToString:@"Video Playing."]) {
+        [self.playButton setSelected:YES];
+        self.isPlaying = YES;
+    }
+    
+    if ([message isEqualToString:@"The video was paused."]) {
+        [self.playButton setSelected:NO];
+        self.isPlaying = NO;
+    }
+    
     if ([message isEqualToString:@"Video Ended."]) {
+        [self.playButton setSelected:NO];
+        self.isPlaying = NO;
+    }
+    
+    if ([message isEqualToString:@"This video has an error."]) {
+        [self.playButton setSelected:NO];
+    }
+    
+    NSData *data = [message dataUsingEncoding:NSUTF8StringEncoding];
+    NSDictionary *messageDic = [NSJSONSerialization JSONObjectWithData:data options: NSJSONReadingMutableContainers error:nil];
+    
+    if (messageDic[@"currentTime"])
+    {
+        if (self.isPlaying) {
+            NSInteger currentTime = [messageDic[@"currentTime"] integerValue];
+            self.videoProgress.value = currentTime;
+        }
+    }
+    
+    if ([message isEqualToString:@"Another sender is in control."]) {
         [self.playButton setSelected:NO];
     }
 }
