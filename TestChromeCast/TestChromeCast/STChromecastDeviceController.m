@@ -130,7 +130,7 @@ static NSString *const kReceiverAppID = @"5D760EA9";
 }
 
 - (void)initControls {
-    UIImage *btnImage = [UIImage imageNamed:@"cast_solid_white"];
+    UIImage *btnImage = [UIImage imageNamed:@"disconnected"];
     UIImage *btnImageConnected = [UIImage imageNamed:@"cast_solid_custom"];
     
     UIButton *chromecastButton = [UIButton buttonWithType:UIButtonTypeCustom];
