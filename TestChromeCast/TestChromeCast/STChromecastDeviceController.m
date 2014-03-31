@@ -59,11 +59,9 @@ static NSString *const kReceiverAppID = @"5D760EA9";
 
 - (void)disconnectFromDevice {
     NSLog(@"Disconnecting device:%@", self.selectedDevice.friendlyName);
-    // New way of doing things: We're not going to stop the applicaton. We're just going
-    // to leave it.
+    // New way of doing things: We're not going to stop the applicaton. We're just going to leave it.
     [self.deviceManager leaveApplication];
     // If you want to force application to stop, uncomment below
-//    [self.deviceManager stopApplicationWithSessionID:self.applicationMetadata.sessionID];
     [self.deviceManager disconnect];
 }
 

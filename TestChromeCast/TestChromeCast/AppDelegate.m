@@ -57,7 +57,7 @@
 
 - (void)logFromFunction:(const char *)function message:(NSString *)message {
     // Send SDK’s log messages directly to the console, as an example.
-    NSLog(@"\n\n%s \n\n %@", function, message);
+    NSLog(@"\n\n%s\n\n%@", function, message);
 }
 
 @end
