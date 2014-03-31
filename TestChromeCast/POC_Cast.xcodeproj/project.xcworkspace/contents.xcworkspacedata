@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:POCChromeCast.xcodeproj">
+      location = "self:POC_Cast.xcodeproj">
    </FileRef>
 </Workspace>

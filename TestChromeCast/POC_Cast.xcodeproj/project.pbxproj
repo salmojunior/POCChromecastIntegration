@@ -43,23 +43,23 @@
 		D894EF5418B3E48E00AD8703 /* ShowChromecastTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowChromecastTableViewController.m; sourceTree = "<group>"; };
 		D89C8ECE18B7810B00B01C14 /* STGCTextChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STGCTextChannel.h; sourceTree = "<group>"; };
 		D89C8ECF18B7810B00B01C14 /* STGCTextChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STGCTextChannel.m; sourceTree = "<group>"; };
-		D8D0501A18B27DA900776A0E /* POCChromeCast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = POCChromeCast.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8D0501A18B27DA900776A0E /* POC_Cast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = POC_Cast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8D0501D18B27DA900776A0E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D8D0501F18B27DA900776A0E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D8D0502118B27DA900776A0E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		D8D0502518B27DA900776A0E /* POCChromeCast-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "POCChromeCast-Info.plist"; sourceTree = "<group>"; };
+		D8D0502518B27DA900776A0E /* POC_Cast-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "POC_Cast-Info.plist"; sourceTree = "<group>"; };
 		D8D0502718B27DA900776A0E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D8D0502918B27DA900776A0E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D8D0502B18B27DA900776A0E /* POCChromeCast-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "POCChromeCast-Prefix.pch"; sourceTree = "<group>"; };
+		D8D0502B18B27DA900776A0E /* POC_Cast-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "POC_Cast-Prefix.pch"; sourceTree = "<group>"; };
 		D8D0502C18B27DA900776A0E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D8D0502D18B27DA900776A0E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D8D0503018B27DA900776A0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D8D0503218B27DA900776A0E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D8D0503318B27DA900776A0E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D8D0503518B27DA900776A0E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		D8D0503B18B27DA900776A0E /* POCChromeCastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = POCChromeCastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8D0503B18B27DA900776A0E /* POC_CastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = POC_CastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8D0503C18B27DA900776A0E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		D8D0504418B27DA900776A0E /* POCChromeCastTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "POCChromeCastTests-Info.plist"; sourceTree = "<group>"; };
+		D8D0504418B27DA900776A0E /* POC_CastTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "POC_CastTests-Info.plist"; sourceTree = "<group>"; };
 		D8D0504618B27DA900776A0E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D8D0504818B27DA900776A0E /* TestChromeCastTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestChromeCastTests.m; sourceTree = "<group>"; };
 		D8D0505518B2901A00776A0E /* STChromecastDeviceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STChromecastDeviceController.h; sourceTree = "<group>"; };
@@ -104,8 +104,8 @@
 		D8D0501B18B27DA900776A0E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D8D0501A18B27DA900776A0E /* POCChromeCast.app */,
-				D8D0503B18B27DA900776A0E /* POCChromeCastTests.xctest */,
+				D8D0501A18B27DA900776A0E /* POC_Cast.app */,
+				D8D0503B18B27DA900776A0E /* POC_CastTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -142,10 +142,10 @@
 		D8D0502418B27DA900776A0E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D8D0502518B27DA900776A0E /* POCChromeCast-Info.plist */,
+				D8D0502518B27DA900776A0E /* POC_Cast-Info.plist */,
 				D8D0502618B27DA900776A0E /* InfoPlist.strings */,
 				D8D0502918B27DA900776A0E /* main.m */,
-				D8D0502B18B27DA900776A0E /* POCChromeCast-Prefix.pch */,
+				D8D0502B18B27DA900776A0E /* POC_Cast-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -162,7 +162,7 @@
 		D8D0504318B27DA900776A0E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D8D0504418B27DA900776A0E /* POCChromeCastTests-Info.plist */,
+				D8D0504418B27DA900776A0E /* POC_CastTests-Info.plist */,
 				D8D0504518B27DA900776A0E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -182,9 +182,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D8D0501918B27DA900776A0E /* POCChromeCast */ = {
+		D8D0501918B27DA900776A0E /* POC_Cast */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D8D0504C18B27DA900776A0E /* Build configuration list for PBXNativeTarget "POCChromeCast" */;
+			buildConfigurationList = D8D0504C18B27DA900776A0E /* Build configuration list for PBXNativeTarget "POC_Cast" */;
 			buildPhases = (
 				D8D0501618B27DA900776A0E /* Sources */,
 				D8D0501718B27DA900776A0E /* Frameworks */,
@@ -194,14 +194,14 @@
 			);
 			dependencies = (
 			);
-			name = POCChromeCast;
+			name = POC_Cast;
 			productName = TestChromeCast;
-			productReference = D8D0501A18B27DA900776A0E /* POCChromeCast.app */;
+			productReference = D8D0501A18B27DA900776A0E /* POC_Cast.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D8D0503A18B27DA900776A0E /* POCChromeCastTests */ = {
+		D8D0503A18B27DA900776A0E /* POC_CastTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D8D0504F18B27DA900776A0E /* Build configuration list for PBXNativeTarget "POCChromeCastTests" */;
+			buildConfigurationList = D8D0504F18B27DA900776A0E /* Build configuration list for PBXNativeTarget "POC_CastTests" */;
 			buildPhases = (
 				D8D0503718B27DA900776A0E /* Sources */,
 				D8D0503818B27DA900776A0E /* Frameworks */,
@@ -212,9 +212,9 @@
 			dependencies = (
 				D8D0504118B27DA900776A0E /* PBXTargetDependency */,
 			);
-			name = POCChromeCastTests;
+			name = POC_CastTests;
 			productName = TestChromeCastTests;
-			productReference = D8D0503B18B27DA900776A0E /* POCChromeCastTests.xctest */;
+			productReference = D8D0503B18B27DA900776A0E /* POC_CastTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -223,7 +223,7 @@
 		D8D0501218B27DA900776A0E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Salmo Roberto da Silva Junior";
 				TargetAttributes = {
 					D8D0503A18B27DA900776A0E = {
@@ -231,7 +231,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D8D0501518B27DA900776A0E /* Build configuration list for PBXProject "POCChromeCast" */;
+			buildConfigurationList = D8D0501518B27DA900776A0E /* Build configuration list for PBXProject "POC_Cast" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -244,8 +244,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D8D0501918B27DA900776A0E /* POCChromeCast */,
-				D8D0503A18B27DA900776A0E /* POCChromeCastTests */,
+				D8D0501918B27DA900776A0E /* POC_Cast */,
+				D8D0503A18B27DA900776A0E /* POC_CastTests */,
 			);
 		};
 /* End PBXProject section */
@@ -298,7 +298,7 @@
 /* Begin PBXTargetDependency section */
 		D8D0504118B27DA900776A0E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D8D0501918B27DA900776A0E /* POCChromeCast */;
+			target = D8D0501918B27DA900776A0E /* POC_Cast */;
 			targetProxy = D8D0504018B27DA900776A0E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -335,7 +335,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -374,7 +374,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -406,7 +406,6 @@
 		D8D0504D18B27DA900776A0E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -417,10 +416,10 @@
 					"$(PROJECT_DIR)/TestChromeCast",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TestChromeCast/POCChromeCast-Prefix.pch";
-				INFOPLIST_FILE = "TestChromeCast/POCChromeCast-Info.plist";
+				GCC_PREFIX_HEADER = "TestChromeCast/POC_Cast-Prefix.pch";
+				INFOPLIST_FILE = "TestChromeCast/POC_Cast-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = POCChromeCast;
+				PRODUCT_NAME = POC_Cast;
 				VALID_ARCHS = "arm64 armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
@@ -429,7 +428,6 @@
 		D8D0504E18B27DA900776A0E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -440,10 +438,10 @@
 					"$(PROJECT_DIR)/TestChromeCast",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TestChromeCast/POCChromeCast-Prefix.pch";
-				INFOPLIST_FILE = "TestChromeCast/POCChromeCast-Info.plist";
+				GCC_PREFIX_HEADER = "TestChromeCast/POC_Cast-Prefix.pch";
+				INFOPLIST_FILE = "TestChromeCast/POC_Cast-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = POCChromeCast;
+				PRODUCT_NAME = POC_Cast;
 				VALID_ARCHS = "arm64 armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
@@ -452,7 +450,6 @@
 		D8D0505018B27DA900776A0E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TestChromeCast.app/TestChromeCast";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -465,8 +462,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "TestChromeCastTests/POCChromeCastTests-Info.plist";
-				PRODUCT_NAME = POCChromeCastTests;
+				INFOPLIST_FILE = "TestChromeCastTests/POC_CastTests-Info.plist";
+				PRODUCT_NAME = POC_CastTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -475,7 +472,6 @@
 		D8D0505118B27DA900776A0E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TestChromeCast.app/TestChromeCast";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -484,8 +480,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestChromeCast/TestChromeCast-Prefix.pch";
-				INFOPLIST_FILE = "TestChromeCastTests/POCChromeCastTests-Info.plist";
-				PRODUCT_NAME = POCChromeCastTests;
+				INFOPLIST_FILE = "TestChromeCastTests/POC_CastTests-Info.plist";
+				PRODUCT_NAME = POC_CastTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -494,7 +490,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D8D0501518B27DA900776A0E /* Build configuration list for PBXProject "POCChromeCast" */ = {
+		D8D0501518B27DA900776A0E /* Build configuration list for PBXProject "POC_Cast" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D8D0504A18B27DA900776A0E /* Debug */,
@@ -503,7 +499,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D8D0504C18B27DA900776A0E /* Build configuration list for PBXNativeTarget "POCChromeCast" */ = {
+		D8D0504C18B27DA900776A0E /* Build configuration list for PBXNativeTarget "POC_Cast" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D8D0504D18B27DA900776A0E /* Debug */,
@@ -512,7 +508,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D8D0504F18B27DA900776A0E /* Build configuration list for PBXNativeTarget "POCChromeCastTests" */ = {
+		D8D0504F18B27DA900776A0E /* Build configuration list for PBXNativeTarget "POC_CastTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D8D0505018B27DA900776A0E /* Debug */,

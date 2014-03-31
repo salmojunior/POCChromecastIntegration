@@ -176,6 +176,7 @@
                         <outlet property="responseLabel" destination="XBZ-DB-4hn" id="BWk-yO-zwg"/>
                         <outlet property="responseTextView" destination="MP5-l1-AIL" id="cq2-ar-3Zl"/>
                         <outlet property="videoProgress" destination="771-7c-ClF" id="A8G-gz-aao"/>
+                        <outlet property="volumeButton" destination="zBJ-y7-inx" id="aO4-tn-wPA"/>
                         <outlet property="volumeSlider" destination="9s1-xZ-Rhx" id="5IB-HW-JD1"/>
                         <segue destination="pYP-Oc-f3E" kind="modal" identifier="chromecastConnect" id="O83-MA-rIB"/>
                     </connections>

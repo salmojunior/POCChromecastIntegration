@@ -64,6 +64,7 @@
 
 - (void)sendMedia:(NSString *)videoId provider:(NSString *)providerName
 {
+    self.isPlaying = NO;
     [self.playButton setSelected:YES];
     [self.fullscreenButton setSelected:YES];
     NSDictionary *dicVideo = @{@"providerName":providerName,@"videoId":videoId};
@@ -128,6 +129,7 @@
 
 - (IBAction)videoProgressChanges:(id)sender
 {
+    self.isPlaying = NO;
     NSInteger seekTo = ceil(self.videoProgress.value);
     NSString *valueString = [NSString stringWithFormat:@"%d", seekTo];
     NSDictionary *dicProgress = @{@"seekto":valueString};
@@ -140,6 +142,7 @@
     NSInteger volume = self.volumeSlider.value;
     if (volume != 0) {
         [_chromecastController sendMessage:@"unmute"];
+        [self.volumeButton setSelected:NO];
     }
     
     NSString *valueString = [NSString stringWithFormat:@"%d", volume];
@@ -156,13 +159,13 @@
 - (void)shouldDisplayModalDeviceController
 {
     if (_chromecastController.isConnected) {
-        [self.responseTextView setText:@""];
         [self controls:NO];
         [_chromecastController sendMessage:@"disconnect"];
         [_chromecastController disconnectFromDevice];
         [self.playButton setSelected:NO];
         [self.fullscreenButton setSelected:NO];
         self.videoProgress.value = 0;
+        [self.responseTextView setText:@""];
     } else {
         [self performSegueWithIdentifier:@"chromecastConnect" sender:self];
     }
@@ -204,6 +207,8 @@
     if ([message isEqualToString:@"Video Ended."]) {
         [self.playButton setSelected:NO];
         self.isPlaying = NO;
+        self.videoProgress.value = 0;
+        [self.fullscreenButton setSelected:NO];
     }
     
     if ([message isEqualToString:@"This video has an error."]) {
