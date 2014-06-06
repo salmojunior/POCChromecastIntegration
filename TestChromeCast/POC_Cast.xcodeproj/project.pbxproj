@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8EAFCBED18F2FD4800BC710D /* Main-iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EAFCBEC18F2FD4800BC710D /* Main-iPad.storyboard */; };
 		8EDBBBE118E096EE00CE0EE3 /* GoogleCast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EDBBBE018E096EE00CE0EE3 /* GoogleCast.framework */; };
 		D894EF5518B3E48E00AD8703 /* ShowChromecastTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D894EF5418B3E48E00AD8703 /* ShowChromecastTableViewController.m */; };
 		D89C8ED018B7810B00B01C14 /* STGCTextChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = D89C8ECF18B7810B00B01C14 /* STGCTextChannel.m */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8EAFCBEC18F2FD4800BC710D /* Main-iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Main-iPad.storyboard"; sourceTree = "<group>"; };
 		8EDBBBE018E096EE00CE0EE3 /* GoogleCast.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleCast.framework; path = TestChromeCast/GoogleCast.framework; sourceTree = "<group>"; };
 		D894EF5318B3E48E00AD8703 /* ShowChromecastTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowChromecastTableViewController.h; sourceTree = "<group>"; };
 		D894EF5418B3E48E00AD8703 /* ShowChromecastTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowChromecastTableViewController.m; sourceTree = "<group>"; };
@@ -91,9 +93,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8EAFCBEB18F2FC7B00BC710D /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
 		D8D0501118B27DA900776A0E = {
 			isa = PBXGroup;
 			children = (
+				8EAFCBEB18F2FC7B00BC710D /* iPad */,
 				D8D0502318B27DA900776A0E /* TestChromeCast */,
 				D8D0504218B27DA900776A0E /* TestChromeCastTests */,
 				D8D0501C18B27DA900776A0E /* Frameworks */,
@@ -128,6 +138,7 @@
 				D8D0502C18B27DA900776A0E /* AppDelegate.h */,
 				D8D0502D18B27DA900776A0E /* AppDelegate.m */,
 				D8D0502F18B27DA900776A0E /* Main.storyboard */,
+				8EAFCBEC18F2FD4800BC710D /* Main-iPad.storyboard */,
 				D8D0503218B27DA900776A0E /* ViewController.h */,
 				D8D0503318B27DA900776A0E /* ViewController.m */,
 				D894EF5318B3E48E00AD8703 /* ShowChromecastTableViewController.h */,
@@ -258,6 +269,7 @@
 				D8D0503618B27DA900776A0E /* Images.xcassets in Resources */,
 				D8D0502818B27DA900776A0E /* InfoPlist.strings in Resources */,
 				D8D0503118B27DA900776A0E /* Main.storyboard in Resources */,
+				8EAFCBED18F2FD4800BC710D /* Main-iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,8 +430,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestChromeCast/POC_Cast-Prefix.pch";
 				INFOPLIST_FILE = "TestChromeCast/POC_Cast-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = POC_Cast;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "arm64 armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
@@ -440,8 +454,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestChromeCast/POC_Cast-Prefix.pch";
 				INFOPLIST_FILE = "TestChromeCast/POC_Cast-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = POC_Cast;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "arm64 armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};

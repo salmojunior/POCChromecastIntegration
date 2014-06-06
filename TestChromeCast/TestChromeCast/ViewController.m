@@ -36,6 +36,7 @@
     self.controlsView.layer.cornerRadius = 5.0f;
     self.controlsView.layer.masksToBounds = YES;
     self.volumeSlider.value = 100.0f;
+    [self.view setBackgroundColor:[UIColor whiteColor]];
     [self controls:NO];
     
     // Store a reference to the chromecast controller.
@@ -78,8 +79,8 @@
 }
 
 - (IBAction)sendYoutubeTwo:(id)sender {
-    self.videoProgress.maximumValue = 286.0f;
-    [self sendMedia:@"XF1K4Z6We1w" provider:@"youtube"];
+    self.videoProgress.maximumValue = 163.0f;
+    [self sendMedia:@"9paiXACqels" provider:@"youtube"];
 }
 
 - (IBAction)playMedia:(UIButton *)sender {
@@ -192,7 +193,7 @@
     }
     
     self.responseTextView.text = messagesBkp;
-    
+    self.responseTextView.font = [UIFont systemFontOfSize:16.0f];
     
     if ([message isEqualToString:@"Video Playing."]) {
         [self.playButton setSelected:YES];
