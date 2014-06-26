@@ -80,17 +80,10 @@ static NSString *const kReceiverAppID = @"76F86A93";
     }
     
     GCKMediaMetadata *metadata = [[GCKMediaMetadata alloc] init];
-    if (title) {
-        [metadata setString:title forKey:kGCKMetadataKeyTitle];
-    }
     
-    if (subtitle) {
-        [metadata setString:subtitle forKey:kGCKMetadataKeySubtitle];
-    }
-    
-    if (thumbnailURL) {
-        [metadata addImage:[[GCKImage alloc] initWithURL:thumbnailURL width:200 height:100]];
-    }
+    [metadata setString:title forKey:kGCKMetadataKeyTitle];
+    [metadata setString:subtitle forKey:kGCKMetadataKeySubtitle];
+    [metadata addImage:[[GCKImage alloc] initWithURL:thumbnailURL width:200 height:100]];
     
     GCKMediaInformation *mediaInformation =
     [[GCKMediaInformation alloc] initWithContentID:[url absoluteString]
